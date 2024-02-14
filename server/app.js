@@ -6,6 +6,7 @@ const app=express();
 
 dotenv.config({path:'./.env'});
 const DB=process.env.DATABASE;
+const PORT=process.send.PORT;
 const connection=async()=>{
 try {
     await mongoose.connect(DB);
